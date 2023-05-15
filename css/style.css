@@ -1,0 +1,136 @@
+/*Attention au contraste*/
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+
+* {
+  box-sizing: border-box;
+  /* color: 1px dashed white;
+    background-color: rgba(0,0,0,0.1); */
+}
+
+body {
+  font-family: arial, sans-serif;
+  font-size: larger;
+  max-width: 1320px;
+  /*Plus adaptable*/
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  /*image du header*/
+  max-width: 100%;
+  /*Plus adaptable*/
+
+  /*Taille mini*/
+}
+figure {
+  text-align: center;
+  margin: 0;
+  flex: 1 1 250px;
+}
+
+a {
+  /*display: block;*/
+  /*pour que les liens passent les uns sous les autres */
+  text-decoration: none;
+  /*Enleve le soulignement*/
+  margin: 16px 0;
+  /*Pour les espacer sur la hauteur*/
+  padding: 0.5rem 0.5rem;
+  display: inline-block;
+  transition: 300ms;
+  color: #0c3f75;
+  transition: 300ms;
+  transform-origin: center;
+}
+
+a:hover {
+  transform: scale(1.2);
+}
+
+nav a:before {
+  display: inline-block;
+  content: "";
+  font-family: "Font Awesome 5 free";
+  font-weight: bold;
+  
+  opacity: 0;
+  transform: translateX(-25px);
+  transition: 200ms;
+  transition-delay: 200ms;
+}
+
+nav a:hover:before {
+  opacity: 1;
+  opacity: 0.2;
+  transform: translateX(0);
+}
+
+header,
+footer {
+  background-color: #0c3f75;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  padding: 32px 16px;
+
+}
+
+header p {
+  font-size: 3rem;
+  margin: 0;
+}
+
+nav {
+  flex: 1 1 200px;
+  display: flex;
+  flex-direction: column;
+  background-color: #9cb4c9;
+  padding: 16px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li a {
+  color: #0c3f75;
+}
+
+main {
+  flex: 3 3 600px;
+  min-height: 600px;
+  background-color: #9cb4c9bf;
+  color: #0c3f75;
+  padding: 32px 16px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+footer a {
+  font-size: small;
+  padding: 8px;
+  aspect-ratio: 1;
+  background-color: #9cb4c9;
+  color: #0c3f75;
+  margin: 8px;
+  border-radius: 50%;
+  font-size: 10px;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.g-1 {
+  gap: 1rem;
+}
