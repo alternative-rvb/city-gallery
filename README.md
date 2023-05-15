@@ -1,3 +1,3 @@
 # City Gallery
 
-Projet pour tester les propriétés flexbox
+Projet pour tester les propriétés flexbox et les media queries
